@@ -1,10 +1,15 @@
 import tw from 'twin.macro';
+import Title from '@/components/typography/Title';
 
 import HomeClassesItem from './ClassesItem';
 
+const STitle = tw(Title)`
+  font-bold text-3xl sm:text-4xl mb-4
+`;
+
 const HomeClasses = () => {
   return (
-    <section tw="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]">
+    <section tw="pt-20 lg:pt-[120px] pb-12 px-4 lg:pb-[90px]">
       <div tw="container mx-auto">
         <div tw="flex flex-wrap -mx-4">
           <div tw="w-full px-4">
@@ -12,17 +17,7 @@ const HomeClasses = () => {
               <span tw="font-semibold text-lg text-primary mb-2 block">
                 Our Classes
               </span>
-              <h2
-                tw="
-                  font-bold
-                  text-3xl
-                  sm:text-4xl
-                  md:text-[40px]
-                  mb-4
-                  "
-              >
-                Excel Data Analyst Course
-              </h2>
+              <STitle>Excel Data Analyst Course</STitle>
               <p tw="text-sm">
                 Online class (Face to face class is available for 5 students
                 minimum due to current conditions)
@@ -31,15 +26,18 @@ const HomeClasses = () => {
             </div>
           </div>
         </div>
-        <div tw="flex flex-wrap -mx-4">
-          <HomeClassesItem title="Power Query" />
-          <HomeClassesItem title="Power Pivot" />
+        <div tw="flex flex-wrap justify-center -mx-4">
+          <HomeClassesItem title="Microsoft Industrial Excel Expert Course" />
+          <HomeClassesItem title="Microsoft Data Analyst Course" />
 
-          <HomeClassesItem title="Data Modelling" />
-          <HomeClassesItem title="Excel functions & formulas" />
+          <HomeClassesItem title="Business For English" />
+          <HomeClassesItem title="IELTS" />
 
-          <HomeClassesItem title="Visualization" />
-          <HomeClassesItem title="Microsoft Exam & Old Questions" />
+          <HomeClassesItem title="Project Management Professional" />
+          <HomeClassesItem title="Ways of Profits - Classic Business Workshop" />
+
+          <HomeClassesItem title="HR Management" />
+          <HomeClassesItem title="Accounting Management" />
         </div>
       </div>
     </section>

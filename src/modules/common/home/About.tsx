@@ -20,8 +20,8 @@ const SDescription = tw(Text)`
 
 const HomeAbout = () => {
   return (
-    <SHomeAbout>
-      <div tw="container mx-auto">
+    <SHomeAbout id="about-us">
+      <div tw="container mx-auto px-4">
         <div tw="flex flex-wrap -mx-4">
           <div tw="w-full md:w-1/2 px-4">
             <SSubTitle>About us</SSubTitle>
@@ -31,17 +31,11 @@ const HomeAbout = () => {
           <div tw="w-full md:w-1/2 px-4">
             <div tw="text-left mx-auto mb-12 lg:mb-20 max-w-[510px]">
               <SDescription>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti repudiandae officiis ex, qui vitae illum quas molestiae
-                autem eius, doloremque repellendus quis sapiente nemo soluta
-                blanditiis. Aliquid fugiat fugit cum.
-              </SDescription>
-
-              <SDescription>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti repudiandae officiis ex, qui vitae illum quas molestiae
-                autem eius, doloremque repellendus quis sapiente nemo soluta
-                blanditiis. Aliquid fugiat fugit cum.
+                We are founding up to elevate the people's education level.
+                Based on the concrete efficient teaching techniques and relied
+                on the International references. We're trying our best efforts
+                and more partnerships we welcomed to improve the organization
+                faster.
               </SDescription>
             </div>
           </div>

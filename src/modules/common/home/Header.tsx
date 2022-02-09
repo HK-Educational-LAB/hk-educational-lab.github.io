@@ -22,7 +22,7 @@ const SHomeHeader = styled.div`
 `;
 
 const SHomeHeaderContainer = styled.div`
-  ${tw`container mx-auto flex flex-row justify-center items-center`}
+  ${tw`container mx-auto flex flex-row justify-center items-center px-4`}
 `;
 
 const SHomeHeaderInnerContainer = styled.div`
@@ -39,12 +39,10 @@ const HomeHeader = () => {
       <SHomeHeaderContainer>
         <SHomeHeaderInnerContainer>
           <Title tw="mb-10 text-3xl font-semibold leading-tight text-gray-200 md:text-5xl">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry
+            Welcome to HK educational LAB
           </Title>
           <Text tw="px-5 mb-10 text-xl text-gray-300">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry
+            Invest your time here!
           </Text>
         </SHomeHeaderInnerContainer>
       </SHomeHeaderContainer>

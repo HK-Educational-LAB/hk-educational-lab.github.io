@@ -5,7 +5,7 @@ import HomePage from '@/modules/home/HomePage';
 const Home = () => <HomePage />;
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  const headProps = { title: 'Testing header props' };
+  const headProps = { title: 'HK educational Lab - Welcome' };
   return <CoreLayout headProps={headProps}>{page}</CoreLayout>;
 };
 
