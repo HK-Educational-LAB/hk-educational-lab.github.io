@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { NextPage } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import tw, { styled } from 'twin.macro';
 
 type Props = {};
@@ -20,7 +20,7 @@ const Nav: NextPage<Props> = () => {
         <nav tw="flex items-center flex-wrap p-3 ">
           <Link href="/">
             <a tw="inline-flex items-center p-2 mr-4">
-              <Image
+              <img
                 src="/static/images/hk-logo.png"
                 alt="HK educational LAB"
                 width={75}
