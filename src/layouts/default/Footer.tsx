@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import tw from 'twin.macro';
+import Text from '@/components/typography/Text';
 
 const SFacebookLink = tw.a`
   w-8 h-8 flex items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white hover:bg-gray-50 mr-3 sm:mr-4 lg:mr-3 xl:mr-4
@@ -19,9 +20,9 @@ const FooterSection: NextPage<Props> = () => {
             <div tw="w-full mb-10">
               <h4 tw="text-lg font-semibold mb-9">Contact us</h4>
 
-              <p tw="text-base">
+              <Text tw="text-base">
                 Laydaukkan Road, Thingyankyun Yangon, Myanmar.
-              </p>
+              </Text>
 
               <p tw="flex justify-center items-center text-sm font-medium">
                 <span tw="mr-3">
@@ -52,7 +53,9 @@ const FooterSection: NextPage<Props> = () => {
                 </SFacebookLink>
               </div>
 
-              <p tw="text-base">&copy; 2025 HK Educational Lab</p>
+              <p tw="text-xs text-gray-700">
+                &copy; {new Date().getFullYear()} HK Educational Lab
+              </p>
             </div>
           </div>
         </div>

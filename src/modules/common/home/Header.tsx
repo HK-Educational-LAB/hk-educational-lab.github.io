@@ -4,21 +4,7 @@ import Title from '@/components/typography/Title';
 import Text from '@/components/typography/Text';
 
 const SHomeHeader = styled.div`
-  ${tw`flex relative z-10`};
-  background-image: url(static/images/header-bg.jpg);
-  background-position: center;
-  &:before {
-    content: '';
-    z-index: -1;
-    opacity: 0.55;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    --bg-opacity: 1;
-    ${tw`bg-blue-800`}
-  }
+  ${tw`flex relative z-10 bg-gradient-to-r from-primary-500 to-primary-600`};
 `;
 
 const SHomeHeaderContainer = styled.div`
@@ -38,10 +24,10 @@ const HomeHeader = () => {
     <SHomeHeader>
       <SHomeHeaderContainer>
         <SHomeHeaderInnerContainer>
-          <Title tw="mb-10 text-3xl font-semibold leading-tight text-gray-200 md:text-5xl">
+          <Title tw="mb-10 text-3xl font-semibold leading-tight text-white md:text-5xl drop-shadow">
             Welcome to HK educational LAB
           </Title>
-          <Text tw="px-5 mb-10 text-xl text-gray-300">
+          <Text tw="px-5 mb-10 text-xl text-gray-50 drop-shadow">
             Invest your time here!
           </Text>
         </SHomeHeaderInnerContainer>
