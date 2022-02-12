@@ -1,7 +1,11 @@
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import Title from '@/components/typography/Title';
 
-import HomeClassesItem from './ClassesItem';
+import HomeClassesItemContainer from './ClassesItemContainer';
+
+const SHomeClassesContainer = styled.section`
+  ${tw`pt-20 lg:pt-[120px] pb-12 px-4 lg:pb-[90px]`}
+`;
 
 const STitle = tw(Title)`
   font-bold text-3xl sm:text-4xl mb-4
@@ -9,7 +13,7 @@ const STitle = tw(Title)`
 
 const HomeClasses = () => {
   return (
-    <section tw="pt-20 lg:pt-[120px] pb-12 px-4 lg:pb-[90px]">
+    <SHomeClassesContainer>
       <div tw="container mx-auto">
         <div tw="flex flex-wrap -mx-4">
           <div tw="w-full px-4">
@@ -26,21 +30,10 @@ const HomeClasses = () => {
             </div>
           </div>
         </div>
-        <div tw="flex flex-wrap justify-center -mx-4">
-          <HomeClassesItem title="Microsoft Industrial Excel Expert Course" />
-          <HomeClassesItem title="Microsoft Data Analyst Course" />
 
-          <HomeClassesItem title="Business For English" />
-          <HomeClassesItem title="IELTS" />
-
-          <HomeClassesItem title="Project Management Professional" />
-          <HomeClassesItem title="Ways of Profits - Classic Business Workshop" />
-
-          <HomeClassesItem title="HR Management" />
-          <HomeClassesItem title="Accounting Management" />
-        </div>
+        <HomeClassesItemContainer />
       </div>
-    </section>
+    </SHomeClassesContainer>
   );
 };
 

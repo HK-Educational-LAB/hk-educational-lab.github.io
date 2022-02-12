@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 import Title from '@/components/typography/Title';
 import Text from '@/components/typography/Text';
 
-const SHomeAbout = styled.div`
+const SHomeAbout = styled.section`
   ${tw`pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] bg-gray-800`}
 `;
 

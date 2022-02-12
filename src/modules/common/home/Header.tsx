@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 import Title from '@/components/typography/Title';
 import Text from '@/components/typography/Text';
 
-const SHomeHeader = styled.div`
+const SHomeHeader = styled.section`
   ${tw`flex relative z-10 bg-gradient-to-r from-primary-500 to-primary-600`};
 `;
 

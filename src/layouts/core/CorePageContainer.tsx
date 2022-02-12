@@ -7,16 +7,13 @@ type Props = {
   children: React.ReactNode;
 };
 
-const StyledCorePageContainer = tw.div`
-`;
-
 const CorePageContainer: NextPage<Props> = ({ children }) => {
   return (
-    <StyledCorePageContainer>
+    <>
       <Nav />
-      {children}
+      <main> {children} </main>
       <Footer />
-    </StyledCorePageContainer>
+    </>
   );
 };
 

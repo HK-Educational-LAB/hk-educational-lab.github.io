@@ -2,6 +2,13 @@
   "presets": ["next/babel"],
   "plugins": [
     "babel-plugin-macros",
-    ["babel-plugin-styled-components", { "ssr": true, "fileName": false }]
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": false,
+        "fileName": false
+      }
+    ]
   ]
 }
